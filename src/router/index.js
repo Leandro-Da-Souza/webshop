@@ -1,14 +1,14 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import HelloWorld from '../components/HelloWorld.vue';
+import Products from '../components/Products';
 
 Vue.use(VueRouter);
 
 const routes = [
     {
         path: '/',
-        name: 'HelloWorld',
-        component: HelloWorld,
+        name: 'Products',
+        component: Products,
     },
 ];
 
