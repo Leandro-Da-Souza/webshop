@@ -1,0 +1,5 @@
+Vilka har arbetat i gruppen? (fullständigt namn och klass)
+URL till ert repo på GitHub (se till att repot är publikt så att läraren kan se det)
+URL till Trello (se till att läraren kan se er Trello board)
+Kravspec (textfil eller länk)
+Anteckningar från retrospective
