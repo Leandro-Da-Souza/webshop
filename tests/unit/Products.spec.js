@@ -11,4 +11,13 @@ describe('Products.vue', () => {
 
         expect(text).toMatch(msg);
     });
+    it('should have "Coffee" as name property in test data model', () => {
+        
+        const expected = "Coffee"; 
+        const wrapper = shallowMount(Products); 
+        const actual = wrapper.vm.testData[0].name;
+       
+        expect(actual).toBe(expected)
+
+    })
 });
