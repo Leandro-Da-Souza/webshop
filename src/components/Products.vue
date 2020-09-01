@@ -18,7 +18,7 @@ export default {
             ]
         };
     },
-    props: ['msg', 'data']
+    props: ['msg', 'Products']
 };
 </script>
 
