@@ -1,5 +1,6 @@
 import { shallowMount } from '@vue/test-utils';
 import Products from '@/components/Products';
+import App from '@/App';
 
 describe('Products.vue', () => {
     it('should render passed in prop to product component', () => {
@@ -20,4 +21,22 @@ describe('Products.vue', () => {
         expect(actual).toBe(expected)
 
     })
+    it('should be 3 properties in testData', () => {
+        const wrapper = shallowMount(Products);
+        const expected = 3;
+        const actual = wrapper.vm.testData.length;
+        expect(actual).toBe(expected)
+    })
 });
+
+// testar data i App.vue 
+
+describe('App.vue' , () => {
+    it('should confirm data exists', () => {
+        const wrapper = shallowMount(App);
+        const data = wrapper.vm.data;
+        
+
+        expect(data).toBeDefined()
+    });
+})
