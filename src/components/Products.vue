@@ -1,24 +1,31 @@
 <template>
-    <div>
-        <p>{{ msg }}</p>
+  <div>
+    <p>{{ msg }}</p>
 
-
-        <p>  </p>
-    </div>
+    <ul>
+      <ProductItem v-for="product in products" v-bind:key="product.id" v-bind:product="product" />
+    </ul>
+    <p></p>
+  </div>
 </template>
 
 <script>
+import ProductItem from "./ProductItem";
+
 export default {
-    data() {
-        return {
-            testData: [
-                 {id:1 , name: 'Coffee',  img: 'https://placeimg.com/640/480/any',price: '108' }, 
+  components: {
+    ProductItem,
+  },
+  data() {
+    return {
+      /*testData: [
+                  {id:1 , name: 'Coffee',  img: 'https://placeimg.com/640/480/any',price: '108' }, 
                  {id:2 , name: 'Baby Yoda',  img: 'https://placeimg.com/640/480/any',price: '108' }, 
-                 {id:3 , name: 'Bulbasaur',  img: 'https://placeimg.com/640/480/any',price: '108' }, 
-            ]
-        };
-    },
-    props: ['msg', 'Products']
+                  {id:3 , name: 'Bulbasaur',  img: 'https://placeimg.com/640/480/any',price: '108' }, 
+             ]*/
+    };
+  },
+  props: ["msg", "products"],
 };
 </script>
 
