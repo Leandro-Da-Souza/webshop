@@ -1,0 +1,13 @@
+We have 3 components that are gonna depend on the same data. 
+
+
+Data Flow
+ 
+App.vue -> sends prop data to:
+    Products.vue / consists of many Items.vue where we loop through prop data where we can send the     single item to: ->
+                SingleProductView.vue
+
+         <- SingleProductView.vue / where we pass the data up to 
+    <- Products.vue
+App.vue ->
+    Cart.vue
