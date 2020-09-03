@@ -17,7 +17,7 @@ describe("Products.vue", () => {
   //     const expected = "Coffee";
   //     const wrapper = shallowMount(Products);
   //     const actual = wrapper.vm.testData[0].name;
-
+  
   //     expect(actual).toBe(expected)
 
   // })
@@ -27,7 +27,7 @@ describe("Products.vue", () => {
   //     const actual = wrapper.vm.testData.length;
   //     expect(actual).toBe(expected)
   // })
-  
+
 
   // testing the Products
   it("should be 3 properties in data", () => {

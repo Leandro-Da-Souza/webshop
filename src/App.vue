@@ -14,13 +14,13 @@ export default {
         {
           id: 1,
           name: "Coffee",
-          img: "https://placeimg.com/640/480/any",
+          img: "https://images.pexels.com/photos/189268/pexels-photo-189268.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
           price: "108",
         },
         {
           id: 2,
           name: "Baby Yoda",
-          img: "https://placeimg.com/640/480/any",
+          img: "https://images.pexels.com/photos/590663/pexels-photo-590663.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
           price: "108",
         },
         {
@@ -41,7 +41,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -49,5 +49,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+
+img {
+
 }
 </style>
