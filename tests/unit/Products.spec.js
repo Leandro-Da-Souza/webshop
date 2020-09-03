@@ -27,6 +27,7 @@ describe("Products.vue", () => {
   //     const actual = wrapper.vm.testData.length;
   //     expect(actual).toBe(expected)
   // })
+  
 
   // testing the Products
   it("should be 3 properties in data", () => {
