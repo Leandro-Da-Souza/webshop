@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view msg="Hello" :products="data" @showSingleProduct="sendProduct"></router-view>
+    <router-view msg="Hello" :products="data" @sending="sendProduct" :single="singleProduct"></router-view>
   </div>
 </template>
 
@@ -30,12 +30,15 @@ export default {
           price: "108",
         },
       ],
+      singleProduct: "",
     };
   },
   methods: {
     sendProduct(product) {
       console.log(12222);
       console.log(product);
+      this.singleProduct = product;
+      this.$router.push("/singleProduct");
     },
   },
 };

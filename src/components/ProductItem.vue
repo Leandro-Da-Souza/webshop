@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     handleClick(product) {
-      this.$emit("showSingleProduct", product);
+      this.$emit("passing", product);
     },
   },
 };
