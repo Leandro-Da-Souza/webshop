@@ -1,16 +1,15 @@
 <template>
-  <div>
-    <p>{{ msg }}</p>
-
-    <ul>
-      <ProductItem
-        v-for="product in products"
-        v-bind:key="product.id"
-        v-bind:product="product"
-        @passing="passing"
-      />
-    </ul>
-    <p></p>
+  <div class="container">
+    <div class="row">
+     
+        <ProductItem
+          v-for="product in products"
+          v-bind:key="product.id"
+          v-bind:product="product"
+          @passing="passing"
+        />
+    
+    </div>
   </div>
 </template>
 
@@ -38,4 +37,17 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped >
+* {
+  box-sizing: border-box;
+}
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+        margin: 10px;
+
+  }
+
+
+</style>

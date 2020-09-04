@@ -5,9 +5,11 @@ describe('Cart.vue', () => {
     test('cart.vue should recieve prop',() => {
         let prop = 'Product'
         const wrapper = shallowMount(Cart, {
-            propsData: {product: prop}
+            propsData: {cartItem: prop}
+    
         })
-
-        expect(wrapper.props().product).toBe(prop)
+        console.log(wrapper.props())
+        
+        expect(wrapper.props().cartItem).toBe(prop);
     })
 })
