@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view msg="Hello" :products="data" @showSingleProduct="sendProduct"></router-view>
+    <router-view msg="Hello" :cartItem="cartItems" @addtocart="sendtocart" :products="data" @sending="sendProduct" :single="singleProduct"></router-view>
   </div>
 </template>
 
@@ -14,13 +14,13 @@ export default {
         {
           id: 1,
           name: "Coffee",
-          img: "https://images.pexels.com/photos/189268/pexels-photo-189268.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+          img: "https://placeimg.com/640/480/any",
           price: "108",
         },
         {
           id: 2,
           name: "Baby Yoda",
-          img: "https://images.pexels.com/photos/590663/pexels-photo-590663.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+          img: "https://placeimg.com/640/480/any",
           price: "108",
         },
         {
@@ -30,18 +30,27 @@ export default {
           price: "108",
         },
       ],
+      singleProduct: "",
+      cartItems: []
     };
   },
   methods: {
     sendProduct(product) {
       console.log(12222);
       console.log(product);
+      this.singleProduct = product;
+      this.$router.push("/singleProduct");
     },
+    sendtocart(single) {
+      this.cartItems.push(single)
+      console.log(this.cartItems)
+      this.$router.push('/cart')
+    }
   },
 };
 </script>
 
-<style lang="scss">
+<style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -49,10 +58,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-
-
-img {
-
 }
 </style>

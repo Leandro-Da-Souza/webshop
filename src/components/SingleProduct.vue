@@ -1,15 +1,23 @@
 <template>
   <div>
-    <img src alt />
-    <h3></h3>
+    <router-link to="/">Go Back</router-link>
+    <img :src="single.img" alt />
+    <h3>{{single.name}}</h3>
+    <p>{{single.price}}</p>
     <p></p>
-    <p></p>
-    <button>Add to cart</button>
+    <button @click="addCart(single)">Add to cart</button>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["single"],
+  methods: {
+    addCart(single) {
+      this.$emit('addtocart', single)
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>

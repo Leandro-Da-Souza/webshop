@@ -3,7 +3,12 @@
     <p>{{ msg }}</p>
 
     <ul>
-      <ProductItem v-for="product in products" v-bind:key="product.id" v-bind:product="product" />
+      <ProductItem
+        v-for="product in products"
+        v-bind:key="product.id"
+        v-bind:product="product"
+        @passing="passing"
+      />
     </ul>
     <p></p>
   </div>
@@ -11,7 +16,6 @@
 
 <script>
 import ProductItem from "./ProductItem";
-
 export default {
   components: {
     ProductItem,
@@ -26,6 +30,11 @@ export default {
     };
   },
   props: ["msg", "products"],
+  methods: {
+    passing(product) {
+      this.$emit("sending", product);
+    },
+  },
 };
 </script>
 
