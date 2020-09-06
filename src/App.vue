@@ -1,13 +1,20 @@
 <template>
   <div id="app">
+      <Navigation />
+    
     <router-view msg="Hello" :cartItem="cartItems" @addtocart="sendtocart" :products="data" @sending="sendProduct" :single="singleProduct"></router-view>
+
   </div>
 </template>
 
 <script>
+import Navigation from "./components/Navigation";
+
 export default {
   name: "App",
-  components: {},
+  components: {
+      Navigation
+  },
   data() {
     return {
       data: [
