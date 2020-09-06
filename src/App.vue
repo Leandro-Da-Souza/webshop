@@ -1,9 +1,15 @@
 <template>
   <div id="app">
-      <Navigation />
-    
-    <router-view msg="Hello" :cartItem="cartItems" @addtocart="sendtocart" :products="data" @sending="sendProduct" :single="singleProduct"></router-view>
+    <Navigation />
 
+    <router-view
+      msg="Hello"
+      :cartItem="cartItems"
+      @addtocart="sendtocart"
+      :products="data"
+      @sending="sendProduct"
+      :single="singleProduct"
+    ></router-view>
   </div>
 </template>
 
@@ -13,7 +19,7 @@ import Navigation from "./components/Navigation";
 export default {
   name: "App",
   components: {
-      Navigation
+    Navigation,
   },
   data() {
     return {
@@ -38,7 +44,7 @@ export default {
         },
       ],
       singleProduct: "",
-      cartItems: []
+      cartItems: [],
     };
   },
   methods: {
@@ -49,17 +55,19 @@ export default {
       this.$router.push("/singleProduct");
     },
     sendtocart(single) {
-      this.cartItems.push(single)
-      console.log(this.cartItems)
-      this.$router.push('/cart')
-    }
+      this.cartItems.push(single);
+      console.log(this.cartItems);
+      this.$router.push("/cart");
+    },
   },
 };
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: quicksand, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
