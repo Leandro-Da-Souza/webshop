@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Products from "../components/Products";
 import SingleProduct from "../components/SingleProduct";
+import Cart from "../components/Cart"
 
 Vue.use(VueRouter);
 
@@ -16,6 +17,11 @@ const routes = [
     name: "SingleProduct",
     component: SingleProduct,
   },
+  {
+    path: '/cart',
+    name: 'Cart',
+    component: Cart
+  }
 ];
 
 const router = new VueRouter({

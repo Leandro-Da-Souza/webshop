@@ -1,0 +1,34 @@
+Kravspec
+
+
+"dessa krav ska vårt projekt uppfylla"
+både från utvecklarnas och användarnas perspektiv!
+gärna skisser (tips: Figma)
+gärna formulerat som user stories
+
+Användare:
+
+Landing page
+* Som en användare vill jag kunna se produkter dvs bild, pris och beskrivning av tillgänliga varor
+- Jag vill se pris på varan
+- Jag vill se bild på varan
+- Jag vill komma till en detaljerad vy när jag klickar 
+
+
+* Som en användare vill jag se produkter i kundvagn så jag vet vad jag har lagt där
+- jag vill veta hur mycket jag ska betala för alla varor 
+
+* Som en användare vill jag kunna lägga in en produkt i kundvagn
+
+* Som en användare vill jag kunna ta bort en produkt ur kundvagn
+
+* Som en användare vill jag kunna se större bild och info om produkt när man klickar på en produkt
+- Jag vill se beskrivning av varan 
+
+
+Utvecklare: 
+* som en utvecklare vill jag förutom bild, pris och beskrivning av varan även ha ett ID på varje vara
+* som en utvecklare ...
+* som en utvecklare ...
+* som en utvecklare ...
+* som en utvecklare ...

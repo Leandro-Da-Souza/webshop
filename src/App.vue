@@ -1,7 +1,9 @@
 <template>
   <div id="app">
       <Navigation />
-    <router-view msg="Hello" :products="data" @showSingleProduct="sendProduct"></router-view>
+    
+    <router-view msg="Hello" :cartItem="cartItems" @addtocart="sendtocart" :products="data" @sending="sendProduct" :single="singleProduct"></router-view>
+
   </div>
 </template>
 
@@ -35,13 +37,22 @@ export default {
           price: "108",
         },
       ],
+      singleProduct: "",
+      cartItems: []
     };
   },
   methods: {
     sendProduct(product) {
       console.log(12222);
       console.log(product);
+      this.singleProduct = product;
+      this.$router.push("/singleProduct");
     },
+    sendtocart(single) {
+      this.cartItems.push(single)
+      console.log(this.cartItems)
+      this.$router.push('/cart')
+    }
   },
 };
 </script>
