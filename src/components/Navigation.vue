@@ -1,9 +1,9 @@
 <template>
   <div>
-    <i id="toggle" @click="showNav = !showNav">MENU</i>
+    <i id="toggle" @click="showNav = !showNav"><img class="navicon" src='@/assets/navicon.svg' alt="Menu icon"></i>
       <nav  v-show="showNav">
             <i id="toggle"
-             @click="showNav = !showNav"><img src='@/assets/close.svg' /> </i>
+             @click="showNav = !showNav"><img src='@/assets/close.svg' alt='Close the menu icon' /> </i>
         <router-link @click.native='showNav = !showNav' 
           v-for="routes in links"
           v-bind:key="routes.id"
@@ -15,7 +15,6 @@
 </template>
 
 <script>
-
 export default {
   name: "Navigation",
   data() {
@@ -37,10 +36,8 @@ export default {
   },
 };
 </script>
-
 <style lang="scss" scoped>
 @import '@/scss/_variables.scss';
-
 * {
   box-sizing: border-box;
   margin:0;
@@ -50,7 +47,6 @@ img,
 #toggle {
   cursor: pointer;
 }
-
 nav {
 position: fixed; /* Sit on top of the page content */
   width: 100%; /* Full width (cover the whole page) */
@@ -61,6 +57,7 @@ position: fixed; /* Sit on top of the page content */
   bottom: 0;
   background-color: $red;
   z-index: 2; 
+  text-align: center;
      
     a {
       text-decoration: none;
@@ -72,7 +69,6 @@ position: fixed; /* Sit on top of the page content */
       font-size: 2em;
       font-weight: bold;
     }
-
     i {
       display: flex;
       align-items: flex-end;
@@ -83,7 +79,7 @@ position: fixed; /* Sit on top of the page content */
       
     }
 }
-
-
-
+.navicon {
+  padding:1rem;
+}
 </style>
