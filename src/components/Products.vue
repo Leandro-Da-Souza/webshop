@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <div class="row">
      
         <ProductItem
           v-for="product in products"
@@ -9,7 +8,6 @@
           @passing="passing"
         />
     
-    </div>
   </div>
 </template>
 
@@ -41,13 +39,16 @@ export default {
 * {
   box-sizing: border-box;
 }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-        margin: 10px;
-
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    
+      div {
+    display: grid;
+    place-items: center;
+    }
+  
   }
-
-
 </style>

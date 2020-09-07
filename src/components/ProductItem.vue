@@ -23,11 +23,14 @@ export default {
 };
 </script>
 
-<style  scoped>
+<style scoped >
 img {
   cursor: pointer;
-  width: 300px;
-  margin: 10px;
-
+  width: 100%;
 }
+
+
+
+
+
 </style>
