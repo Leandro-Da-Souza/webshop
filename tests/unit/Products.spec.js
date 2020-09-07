@@ -4,14 +4,14 @@ import Products from "@/components/Products";
 import App from "@/App";
 
 describe("Products.vue", () => {
-  it("should render passed in prop to product component", () => {
-    const msg = "Hello";
-    const wrapper = shallowMount(Products, {
-      propsData: { msg },
-    });
-    const text = wrapper.find("p").text();
-    expect(text).toMatch(msg);
-  });
+  // it("should render passed in prop to product component", () => {
+  //   const msg = "Hello";
+  //   const wrapper = shallowMount(Products, {
+  //     propsData: { msg },
+  //   });
+  //   const text = wrapper.find("p").text();
+  //   expect(text).toMatch(msg);
+  // });
   // it('should have "Coffee" as name property in test data model', () => {
 
   //     const expected = "Coffee";

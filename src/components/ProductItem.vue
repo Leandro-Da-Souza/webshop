@@ -1,10 +1,10 @@
 <template>
   <div>
-    <li>
+ 
       <img :src="product.img" alt @click="handleClick(product)" />
       <h3>{{product.name}}</h3>
-      <p></p>
-    </li>
+      <p>{{product.price}}</p>
+    
   </div>
 </template>
 
@@ -26,5 +26,8 @@ export default {
 <style  scoped>
 img {
   cursor: pointer;
+  width: 300px;
+  margin: 10px;
+
 }
 </style>

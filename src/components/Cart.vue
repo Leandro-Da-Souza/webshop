@@ -1,17 +1,21 @@
 <template>
   <div>
     <!-- Cart Item start  should this be a component instead ? -->
-    <img src="" alt="" />
-    <h3>{{ cartItem }}</h3>
-    <p></p>
-    <p></p>
-    <!-- cart item end -->
 
-    <p>Order value:</p>
-    <p>Delivery:</p>
-    <p>Total:</p>
+{{cartItem}}
+    <section class="cart" v-for="cartItem in cartItem" v-bind:key='cartItem.id'>
+      <img src alt />
+      <h3>{{cartItem.name}}</h3>
+      <p>{{cartItem.price}}</p>
+      <p></p>
+      <!-- cart item end -->
 
-    <button class="btn">Proceed to checkout</button>
+      <p>Order value:</p>
+      <p>Delivery:</p>
+      <p>Total:</p>
+
+      <button>Proceed to checkout</button>
+    </section>
   </div>
 </template>
 
