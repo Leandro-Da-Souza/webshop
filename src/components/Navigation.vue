@@ -1,16 +1,16 @@
 <template>
   <div>
-    <p id="toggle" @click="showNav = !showNav">MENU</p>
-    <div v-show="showNav">
-      <nav>
-        <router-link
+    <i id="toggle" @click="showNav = !showNav"><img class="navicon" src='@/assets/navicon.svg' alt="Menu icon"></i>
+      <nav  v-show="showNav">
+            <i id="toggle"
+             @click="showNav = !showNav"><img src='@/assets/close.svg' alt='Close the menu icon' /> </i>
+        <router-link @click.native='showNav = !showNav' 
           v-for="routes in links"
           v-bind:key="routes.id"
           :to="`${routes.page}`"
         >{{routes.text}}
         </router-link>
       </nav>
-    </div>
   </div>
 </template>
 
@@ -27,20 +27,59 @@ export default {
         },
              {
           id: 1,
-          text: "TEST LINK",
-          page: "/#",
+          text: "Products",
+          page: "/",
         },
       ],
-      showNav: true,
+      showNav: false,
     };
   },
 };
 </script>
-
-<style  scoped>
+<style lang="scss" scoped>
+@import '@/scss/_variables.scss';
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
 img,
 #toggle {
   cursor: pointer;
 }
-
+nav {
+position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $red;
+  z-index: 2; 
+  text-align: center;
+     
+    a {
+      text-decoration: none;
+      color: $yellow;
+      flex-direction: column;
+      justify-content: space-around;
+      display:flex;
+      padding: 1rem;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    i {
+      display: flex;
+      align-items: flex-end;
+      padding: 1rem;
+    }
+    img {
+      width: 30px;
+      
+    }
+}
+.navicon {
+  padding:1rem;
+}
 </style>

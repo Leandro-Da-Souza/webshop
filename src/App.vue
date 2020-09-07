@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+
+    <Header />
     <Navigation />
 
     <router-view
@@ -15,12 +17,15 @@
 </template>
 
 <script>
-import Navigation from "./components/Navigation";
+// import Navigation from "./components/Navigation";
+import Header from "./components/Header";
+
 
 export default {
   name: "App",
   components: {
-    Navigation,
+    // Navigation,
+    Header
   },
   data() {
     return {
@@ -72,14 +77,15 @@ export default {
 </script>
 
 <style>
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
 #app {
   font-family: quicksand, sans-serif;
   font-style: normal;
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>

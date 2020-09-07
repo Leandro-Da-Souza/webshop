@@ -1,13 +1,11 @@
 <template>
   <div class="container">
-     
         <ProductItem
           v-for="product in products"
           v-bind:key="product.id"
           v-bind:product="product"
           @passing="passing"
         />
-    
   </div>
 </template>
 
