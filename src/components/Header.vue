@@ -2,7 +2,6 @@
   <header>
     <Navigation />
     <h1 @click="goHome">Shop</h1>
-
     <img src="@/assets/bagicon.svg" class="carticon" alt="Cart icon" @click="goToCart" />
   </header>
 </template>

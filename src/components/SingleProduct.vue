@@ -4,7 +4,7 @@
     <img :src="single.img" alt />
     <h3>{{ single.name }}</h3>
     <p>{{ single.price }}</p>
-    <p></p>
+    <p class="desc">Lorem ipdasfsfdfsum dolor sit amet consectetur, adipisicing elit. Porro, error ducimus. Excepturi laboriosam nostrum odio debitis ullam, nam facere doloribus?</p>
     <button class="btn" @click="addCart(single)">Add to cart</button>
   </div>
 </template>
@@ -20,7 +20,8 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+
 .page {
   display: block;
   position: relative;
@@ -31,10 +32,7 @@ export default {
 .btn {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #de3c4b;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-radius: 5px;
   text-indent: 0;
   display: inline-block;
   color: #ffc857;
@@ -48,6 +46,7 @@ export default {
   text-decoration: none;
   text-align: center;
   text-shadow: 0px 1px 0px #b23e35;
+  border:none;
 }
 
 .btn:hover {

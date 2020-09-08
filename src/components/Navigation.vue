@@ -58,6 +58,22 @@ position: fixed;
   background-color: $red;
   z-index: 2; 
   text-align: center;
+  animation: fadein 0.4s;
+  
+    // animation: fadeout 0.4s;
+
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+//   @keyframes fadeout {
+//     from { opacity: 1; }
+//     to   { opacity: 0; }
+// }
+
+
      
     a {
       text-decoration: none;
@@ -81,6 +97,5 @@ position: fixed;
 .navicon {
   padding:1rem;
 }
-
 
 </style>
