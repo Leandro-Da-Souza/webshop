@@ -2,8 +2,7 @@
   <header>
     <Navigation />
     <h1 @click="goHome">Shop</h1>
-
-    <img src="@/assets/bagicon.svg" alt="Cart icon" @click="goToCart" />
+    <img src="@/assets/bagicon.svg" class="carticon" alt="Cart icon" @click="goToCart" />
   </header>
 </template>
 <script>
@@ -30,7 +29,6 @@ export default {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
 
   h1 {
     font-family: "playfair display", serif;
@@ -46,5 +44,9 @@ img {
 
 a {
   display: inline;
+}
+
+.carticon {
+  margin: 1rem;
 }
 </style>

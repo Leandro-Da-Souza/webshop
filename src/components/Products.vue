@@ -38,9 +38,10 @@ export default {
   box-sizing: border-box;
 }
   .container {
+    padding:1rem;
     display: grid;
-    height: 100vh;
-    grid-gap: 1rem;
+    // height: 100vh;
+    grid-gap: 0.5rem;
     grid-template-columns: repeat(2, 1fr);
     
       div {
