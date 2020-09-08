@@ -1,8 +1,26 @@
-<template></template>
+<template>
+  <div>
+    <h1>Your Order Is On The Way</h1>
+  </div>
+</template>
 
 <script>
 export default {};
 </script>
 
-<style>
+<style lang="scss">
+@import "@/scss/_variables.scss";
+
+div {
+  width: 100vw;
+  height: 100vh;
+  background-color: $red;
+  display: flex;
+
+  h1 {
+    color: $yellow;
+    justify-content: center;
+    align-items: center;
+  }
+}
 </style>
