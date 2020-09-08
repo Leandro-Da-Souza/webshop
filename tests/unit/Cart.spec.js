@@ -1,3 +1,4 @@
+
 import { shallowMount, mount } from "@vue/test-utils";
 import Cart from "@/components/Cart.vue";
 // import App from "@/App.vue";
