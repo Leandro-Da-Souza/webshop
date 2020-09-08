@@ -19,7 +19,7 @@
       </ul>
       <p>Order value:</p>
       <p>Delivery:</p>
-      <p>Total:</p>
+      <p>Total: {{total}} $</p>
       <button class="btn" @click="clear">Proceed to checkout</button>
     </section>
     <h2 v-else>Please Make Some Orders :D</h2>
@@ -37,6 +37,18 @@ export default {
     },
     clear() {
       this.$emit("clearCart");
+    },
+    reducer(acc, currentVal) {
+      return acc + currentVal;
+    },
+  },
+  computed: {
+    total() {
+      let itemSum = this.cartItem.map((item) => {
+        return Number(item.price);
+      });
+      let total = itemSum.reduce(this.reducer);
+      return total;
     },
   },
 };
