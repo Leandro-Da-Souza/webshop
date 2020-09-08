@@ -1,7 +1,7 @@
 <template>
   <header>
     <Navigation />
-    <h1 @click="goHome">Shop</h1>
+    <h1 @click="goHome">Basic Bitch Shop &#128536;</h1>
     <img src="@/assets/bagicon.svg" class="carticon" alt="Cart icon" @click="goToCart" />
   </header>
 </template>
@@ -29,6 +29,7 @@ export default {
 header {
   display: flex;
   justify-content: space-between;
+  width:100%;
 
   h1 {
     font-family: "playfair display", serif;
