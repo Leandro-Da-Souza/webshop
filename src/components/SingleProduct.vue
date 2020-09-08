@@ -27,6 +27,11 @@ export default {
   position: relative;
   place-items: center;
   text-align: center;
+  padding: 1rem;
+}
+
+img {
+  width:100%;
 }
 
 .btn {
