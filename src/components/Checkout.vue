@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Your Order Is On The Way</h1>
+    <h1>Your Order Is On The Way</h1>p
   </div>
 </template>
 
