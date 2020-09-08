@@ -13,40 +13,54 @@
       @deleteItem="itemDelete"
       @clearCart="cartClear"
     ></router-view>
+
+    <Footer />
   </div>
 </template>
 
 <script>
 // import Navigation from "./components/Navigation";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 
 export default {
   name: "App",
   components: {
     // Navigation,
     Header,
+    Footer
   },
   data() {
     return {
       data: [
         {
           id: 1,
-          name: "Coffee",
-          img: "https://placeimg.com/640/480/any",
+          name: "Analog Camera",
+          img: "https://images.pexels.com/photos/1983037/pexels-photo-1983037.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
           price: "108",
         },
-        {
-          id: 2,
-          name: "Baby Yoda",
-          img: "https://placeimg.com/640/480/any",
-          price: "108",
-        },
+      
         {
           id: 3,
-          name: "Bulbasaur",
-          img: "https://placeimg.com/640/480/any",
+          name: "A polaroid",
+          img: "https://images.unsplash.com/photo-1533590557569-bab3f88368d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&h=634",
           price: "108",
         },
+         {
+          id: 4,
+          name: "The Hipster Bike",
+          img: "https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&h=634",
+          price: "4000",
+        },
+            {
+          id: 2,
+          name: "Old Gameboy",
+          img: "https://images.unsplash.com/photo-1531525645387-7f14be1bdbbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&h=640",
+          price: "108",
+        },
+
+
       ],
       singleProduct: "",
       cartItems: [],
@@ -80,11 +94,13 @@ export default {
 </script>
 
 <style>
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 #app {
   font-family: quicksand, sans-serif;
   font-style: normal;
