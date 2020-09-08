@@ -1,0 +1,30 @@
+arbVad har ni lärt er av projektet?
+We learnt to develop using TDD principles as our guiding light. 
+We sharpened our knowledge of Agile through this process. 
+Patience with the process allowed us to see the bigger picture. 
+
+
+Hur fördelade ni arbetet? (vem gjorde vad)
+Before delving into the project, we took the time to lay the ground work. 
+As a group we discussed and made a wireframe, the prototype and the data structure.
+This informed how we allocated tasks through out the project.
+
+Fundera över vilka ändringar ni skulle göra om ni skulle fortsätta med projektet i samma grupp:
+Although we stuck to the principles of Agile and TDD at the beginning, we realised that we regressed into old habits as the deadline for the project drew nearer. 
+This, by far, is the point we would as a collective, would like to improve upon.
+
+Vad skulle vi börja göra?
+We should start working on adding increment and decrement functionality to our sight. 
+Refactoring the project to run in vuex, a database running in the backend etc.  
+
+Vad skulle vi sluta göra?
+Stop rushing the process so we can reap the full benefits of TDD. 
+
+Vad skulle vi fortsätta göra?
+Continue adhering and learning about the Agile process, as it leads to better and more stable results in the long run.
+
+Vilka krav var svårast respektive lättast att skriva test för?
+The test for general access to the data in the template was easier than testing for the dynamic properties in the project.
+
+Fanns det något ni hade tänkt göra, som ni inte hann med? Vad berodde det på?
+increase/decrement functionality, ran out of time. 
