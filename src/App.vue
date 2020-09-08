@@ -73,7 +73,7 @@ export default {
     },
     cartClear() {
       this.cartItems = [];
-      this.$router.push("");
+      this.$router.push("/checkout");
     },
   },
 };

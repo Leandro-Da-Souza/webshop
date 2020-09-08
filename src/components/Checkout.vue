@@ -8,7 +8,7 @@
 export default {};
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@/scss/_variables.scss";
 
 div {
@@ -16,11 +16,11 @@ div {
   height: 100vh;
   background-color: $red;
   display: flex;
+  justify-content: center;
+  align-items: center;
 
   h1 {
     color: $yellow;
-    justify-content: center;
-    align-items: center;
   }
 }
 </style>
