@@ -1,16 +1,11 @@
 <template>
-  <div>
-    <p>{{ msg }}</p>
-
-    <ul>
-      <ProductItem
-        v-for="product in products"
-        v-bind:key="product.id"
-        v-bind:product="product"
-        @passing="passing"
-      />
-    </ul>
-    <p></p>
+  <div class="container">
+        <ProductItem
+          v-for="product in products"
+          v-bind:key="product.id"
+          v-bind:product="product"
+          @passing="passing"
+        />
   </div>
 </template>
 
@@ -38,4 +33,39 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped >
+@import "@/scss/_typography.scss";
+* {
+  box-sizing: border-box;
+}
+
+  .container {
+    padding:1rem;
+    display: grid;
+    // height: 100vh;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    height:auto;
+      div {
+    display: grid;
+    place-items: center;
+  
+    }
+  
+  }
+
+
+ @media only screen and (min-width: 800px) {
+
+.container {
+      grid-template-columns: repeat(3, 1fr);
+
+}
+ }
+
+
+
+
+
+
+</style>
