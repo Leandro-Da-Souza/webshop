@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-
     <Header />
     <Navigation />
 
@@ -12,6 +11,7 @@
       @sending="sendProduct"
       :single="singleProduct"
       @deleteItem="itemDelete"
+      @clearCart="cartClear"
     ></router-view>
   </div>
 </template>
@@ -20,12 +20,11 @@
 // import Navigation from "./components/Navigation";
 import Header from "./components/Header";
 
-
 export default {
   name: "App",
   components: {
     // Navigation,
-    Header
+    Header,
   },
   data() {
     return {
@@ -72,20 +71,22 @@ export default {
       let index = this.cartItems.findIndex((item) => item.id === id);
       this.cartItems.splice(index, 1);
     },
+    cartClear() {
+      this.cartItems = [];
+      this.$router.push("/checkout");
+    },
   },
 };
 </script>
 
 <style>
-
 * {
   box-sizing: border-box;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 #app {
   font-family: quicksand, sans-serif;
   font-style: normal;
-
 }
 </style>
