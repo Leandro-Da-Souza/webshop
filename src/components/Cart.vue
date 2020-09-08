@@ -23,7 +23,7 @@
     <p>Delivery:</p>
     <p>Total:</p>
 
-    <button class="btn">Proceed to checkout</button>
+    <button class="btn" @click="clear">Proceed to checkout</button>
   </div>
 </template>
 
@@ -34,6 +34,9 @@ export default {
   methods: {
     deleteItem(id) {
       this.$emit("deleteItem", id);
+    },
+    clear() {
+      this.$emit("clearCart");
     },
   },
 };
