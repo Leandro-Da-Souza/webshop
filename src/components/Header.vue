@@ -30,7 +30,6 @@ export default {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
 
   h1 {
     font-family: "playfair display", serif;
@@ -42,6 +41,7 @@ header {
 img {
   width: 20px;
   cursor: pointer;
+
 }
 
 a {
