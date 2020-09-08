@@ -1,5 +1,5 @@
 import { shallowMount, mount } from "@vue/test-utils";
-import Products from "@/components/Products";
+//import Products from "@/components/Products";
 //import ProductItem from "@/components/ProductItem";
 import App from "@/App";
 

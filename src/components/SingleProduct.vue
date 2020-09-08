@@ -31,10 +31,7 @@ export default {
 .btn {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #de3c4b;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border: 5px, 5px, 5px, 5px;
   text-indent: 0;
   display: inline-block;
   color: #ffc857;
