@@ -38,7 +38,6 @@ export default {
 * {
   box-sizing: border-box;
 }
-
   .container {
     padding:1rem;
     display: grid;
