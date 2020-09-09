@@ -17,6 +17,13 @@ Get the data flow going
 Finish App Design in Figma
 Add required components for project.
 
+Standup Meeting 04-09-2020
+
+Planned to test Emitted events.
+Discussed potential work through to achieve this end.
+Added to trello the plans to 'create menu'.
+Discussed the way forward ie. Test needed for the phase we were at.
+
 Standup Meeting 06-09-2020
 
 What we did: 
