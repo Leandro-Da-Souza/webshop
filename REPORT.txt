@@ -1,5 +1,14 @@
 Vilka har arbetat i gruppen? (fullständigt namn och klass)
+Ade FRK19s, Lova FRK19s, Leandro FRK19s
+
 URL till ert repo på GitHub (se till att repot är publikt så att läraren kan se det)
+https://github.com/Leandro-Da-Souza/webshop
+
 URL till Trello (se till att läraren kan se er Trello board)
+https://trello.com/b/tqPBc50n/tdd-nerd-shop
+
 Kravspec (textfil eller länk)
+Se kravspec.txt i root
+
 Anteckningar från retrospective
+Se retrospective.txt i root

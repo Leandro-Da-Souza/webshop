@@ -1,0 +1,33 @@
+Standup Meeting 2-9-2020
+
+What we did yesterday: 
+add cart symbol in wireframe
+add test data in Products.Vue
+tested data model in Products.Vue
+add test data in App.Vue
+tested data model in App.vue
+discussed the data structure
+
+
+What we plan on doing today:
+Display the Data in the frontend on Products.Vue
+Ask David about data passing with routes
+Ask David about possible problem with Jest and Vue Routes
+Get the data flow going 
+Finish App Design in Figma
+Add required components for project.
+
+Standup Meeting 06-09-2020
+
+What we did: 
+updated trello board
+delegated remaining tasks
+add for future list in trello
+
+
+Standup Meeting 07-09-2020
+
+what we will do:
+create the remaining static components(About.vue/Checkout.vue)
+finish the last bit of functionality in Cart.vue
+continue with the styling
